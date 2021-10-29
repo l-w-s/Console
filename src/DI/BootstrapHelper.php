@@ -38,8 +38,9 @@ use Symfony\Component\Console\Input\ArgvInput;
  *
  * @author Filip Procházka <filip@prochazka.su>
  */
-class BootstrapHelper extends Nette\Object
+class BootstrapHelper
 {
+    use Nette\SmartObject;
 
 	/**
 	 * @param Nette\Configurator $configurator

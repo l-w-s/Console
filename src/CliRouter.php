@@ -24,8 +24,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class CliRouter extends Nette\Object implements Nette\Application\IRouter
+class CliRouter implements Nette\Application\IRouter
 {
+    use Nette\SmartObject;
 
 	/**
 	 * @var array
