@@ -18,8 +18,9 @@ use Nette;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class CliResponse extends Nette\Object implements Nette\Application\IResponse
+class CliResponse implements Nette\Application\IResponse
 {
+    use Nette\SmartObject;
 
 	/**
 	 * @var int
